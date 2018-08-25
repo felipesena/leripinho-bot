@@ -1,1 +1,1 @@
-bot: python "bot.py"
+leripinho-bot: python "bot.py"
