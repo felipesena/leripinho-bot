@@ -5,6 +5,7 @@ install:
 script:
 - python -m compileall ./bot.py
 deploy:
+  skip_cleanup: true
   provider: heroku
   api_key:
     secure: gcGY4p+bZKc5jgdLvOGjT49oGZz1homyryaKyzN1VgiQIN9HCC8kK77jtJuHiFzc7xr7wKfEF4pqubs7aX8/dXfHwRa36V/I0nwGwGP12IXpmc02EWcDo+HkHqL3tDppZUXxc2eAN3NQp0E6r+VyKMbhzwbf/+V4N9Rb/Wk0WAFPEaN92rZAikiuEMocWzEqrE3RhgmGdZMowwp+xkXVRNcUwguICUJK024R6OXi+Tm7JaNid/yDYSIasP6JKCHEfBL2ZTysf2bPB++bkOMdiJGeBvi/rFbecx+RtnP4bF4lj0CiqmXGOONhutiP/6+zefpT+thQwOQRmnkPUNsq/Ea2PhgJUMy/I/hXCvj6xGw+sJ8fIBkRrsNUQjet06fTaLwZwsbziptnHOiLKMqi0SQ7G1vDDXH/f2JJXihf/OtDCf3zQciJa/rEMYPhaNRs0YliQfsJ4CCm54iKUqBJO647EY7jK4Cj3qfSfvcBHErmM3TNccELncNxU4z2T3As6Zwx0NO2YzW4qn4JqzlfRtCqySbzuNUxL48tVSL7ND7Zy94C3dOuOHHb8C33GCvfTJyiMRVC+FOUEt+mfUPVuOfn5uhN+i3XEcdiK6BBZNdfhl0Ya55DV25gLaWWdJ9h3keJzE7xPa4k58+bvmWjte+rDFuleVr8KiwGLqaCITU=
