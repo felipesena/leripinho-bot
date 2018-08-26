@@ -4,8 +4,14 @@ python: "3.6"
 install:
 - pip install -r requirements.txt
 
+script:
+ - python -m compileall ./bot.py
+ 
 deploy:
   provider: heroku
   api_key:
     secure: NHwJtPH5upFeAEMx9Phzdf3yG/ar/Nfn1WAQ8oLKL5ywJlO5yUJ5kg18CPZiTXvpjDEwXnF7kprZdTC9K+Sj6v47uObba7x2x6H/OxYHfRckWMojFvuDA4g2Rza4+kct0AQRkQ4Z5V0VDSqvNkkPidL6NZ7WMZqGiULGG8Aec8e1/tr1g8gVkpvG0sEYlvv3jMT+WQ2wFGH497i6CoqWHd8si+Y7C/qWiJXquy9QNranu0jOHXPMFvp83nW8vEDd6YmiM0Z7vvKkRyYWS9v9tr8AcRUnJE61ZCZvOUZWnhmjW4BtShafCrnaaChc8ckuitkFg48EKod62O0jzDoYFOOqd1MWKx2bJR/D8OC45DZSz7zugSjI1h2MlFVgevRR31gsqY2it7nSI9Zy9Bk4r+QtcT5ogEOb2M59WQjl7bURG/hH6kByqkx+vMpXdwOFKR7BtmaRNdZlvrNiyOeHwv2JyDOEYgJwm1qK4xSrNZZq5SsqmAF6moTQ+eG83McOUaFV7kGBatBkSs0bkf/0qHQXJGmY/VGsdhQa/iXh/jM6ODhxxia8QV4awrqLjXSQyoMhzfwubycN1mS3MP0jRvwc0thNuG0Kg2sEk8M1jOsAukuQWnh9MtSOHHUrzkX0j0PQU1kkehIKqGnBaAzB8xv1ZPCmWq/EBtPhIhq0g7M=
   app: leripinho-bot
+
+notifications:
+  email: true
